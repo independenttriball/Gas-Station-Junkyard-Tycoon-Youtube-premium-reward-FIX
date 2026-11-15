@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Playables: Premium rewards on PC",
+  "version": "1.0.0",
+  "description": "With YouTube Premium, YouTube Playables give in-game rewards without ads on PC too, as in the mobile app.",
+  "homepage_url": "https://github.com/independenttriball/Gas-Station-Junkyard-Tycoon-Youtube-premium-reward-FIX",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["fix.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": false
+    }
+  ]
+}
